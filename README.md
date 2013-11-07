@@ -1,4 +1,4 @@
-SDSP_Nest
+CMU SV Smart Building Data Visualization Project
 =========
 
-CMU Sensor Data Service Platform Architecture and Design application set up to interact with the Nest device through an android mobile application.
+CMU Sensor Data Service Platform Architecture and Design application working towards a data visualization framework for "Smart Buildings".
