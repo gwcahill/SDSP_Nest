@@ -24,4 +24,5 @@ def secure_token
   end
 end
 
-SdspDataViz::Application.config.secret_key_base = secure_token
+#SdspDataViz::Application.config.secret_key_base = secure_token
+SdspDataViz::Application.config.secret_token = secure_token
