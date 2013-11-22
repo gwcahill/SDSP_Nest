@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SdspDataViz</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+    <head>
+      <title><%= full_title(yield(:title)) %></title>
+      <%= stylesheet_link_tag    "application", :media => "all" %>
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
+      <%= render 'layouts/shim' %>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.js" type="text/javascript" charset="utf-8"></script>
 
-<%= yield %>
 
-</body>
+      <script src="js/d3.js" type="text/javascript" charset="utf-8"></script>
+
+      <script src="us-pres.json" type="text/javascript" charset="utf-8"></script>
+
+      <style type="text/css" media="screen">
+          body, html {
+              padding: 0;
+              margin: 0;
+              background-color: #e7e8e9;
+          }
+
+          #container {
+              width: 800px;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          h1 {
+              text-align: center;
+          }
+      </style>
+      <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" />
+      <style type="text/css">
+          body {
+              background-color: #333;
+              color: #EEE;
+          }
+      </style>
+    </head>
+    <body>
+        <div class="container">
+          <%= yield %>
+        </div>
+    </body>
 </html>
