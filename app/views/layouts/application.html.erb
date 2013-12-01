@@ -13,23 +13,7 @@
 
       <script src="us-pres.json" type="text/javascript" charset="utf-8"></script>
 
-      <style type="text/css" media="screen">
-          body, html {
-              padding: 0;
-              margin: 0;
-              background-color: #e7e8e9;
-          }
-
-          #container {
-              width: 800px;
-              margin-left: auto;
-              margin-right: auto;
-          }
-          h1 {
-              text-align: center;
-          }
-      </style>
-      <link rel="stylesheet" type="text/css" href="/assets/stylesheet.css" />
+      <link rel="stylesheet" type="text/css" href="assets/data_vis_stylesheet.css" />
       <style type="text/css">
           body {
               background-color: #333;
@@ -38,9 +22,6 @@
       </style>
     </head>
     <body>
-        <%= render 'layouts/header' %>
-        <div class="container">
           <%= yield %>
-        </div>
     </body>
 </html>
